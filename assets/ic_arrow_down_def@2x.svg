@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_arrow_down_def@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_arrow_down_def_hover" fill="#666666">
+            <g id="Combined-Shape-Copy">
+                <path d="M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z" transform="translate(12.000000, 10.000000) rotate(-315.000000) translate(-12.000000, -10.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
