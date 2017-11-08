@@ -31,7 +31,7 @@ module.exports = "/**!\n * @fileOverview Kickass library to create and place pop
 /***/ "../../../../raw-loader/index.js!../../../../source-map-loader/index.js!../../../../../src/script.js":
 /***/ (function(module, exports) {
 
-module.exports = "function processScrolling() {\n  var $ = jQuery;\n\n  $('a.js-scroll-trigger[href*=\"#\"]:not([href=\"#\"])').click(function (e) {\n    var target = $(this.hash);\n    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');\n    if (target.length) {\n      $('html, body').animate({\n        scrollTop: (target.offset().top - 48)\n      }, 1000, \"easeInOutExpo\");\n      return false;\n    }\n  });\n\n  $('.js-scroll-trigger').click(function () {\n    $('.navbar-collapse').collapse('hide');\n  });\n\n  $('body').scrollspy({\n    target: '#mainNav',\n    offset: 54\n  });\n\n\n}\n"
+module.exports = ""
 
 /***/ }),
 

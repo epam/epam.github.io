@@ -62,7 +62,7 @@ var AboutComponent = (function () {
     return AboutComponent;
 }());
 AboutComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-about',
         template: __webpack_require__("../../../../../src/app/about/about.component.html"),
         styles: [__webpack_require__("../../../../../src/app/about/about.component.css")]
@@ -132,7 +132,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -163,13 +163,12 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__project_item_project_item_component__ = __webpack_require__("../../../../../src/app/project-item/project-item.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__search_project_search_project_component__ = __webpack_require__("../../../../../src/app/search-project/search-project.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__service_project_service__ = __webpack_require__("../../../../../src/app/service/project.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__search_search_component__ = __webpack_require__("../../../../../src/app/search/search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__category_block_category_block_component__ = __webpack_require__("../../../../../src/app/category-block/category-block.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__main_menu_main_menu_component__ = __webpack_require__("../../../../../src/app/main-menu/main-menu.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__service_category_service__ = __webpack_require__("../../../../../src/app/service/category.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__project_detail_info_project_detail_info_component__ = __webpack_require__("../../../../../src/app/project-detail-info/project-detail-info.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__search_search_component__ = __webpack_require__("../../../../../src/app/search/search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__category_block_category_block_component__ = __webpack_require__("../../../../../src/app/category-block/category-block.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__main_menu_main_menu_component__ = __webpack_require__("../../../../../src/app/main-menu/main-menu.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__service_category_service__ = __webpack_require__("../../../../../src/app/service/category.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__project_detail_info_project_detail_info_component__ = __webpack_require__("../../../../../src/app/project-detail-info/project-detail-info.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -196,14 +195,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
 var AppModule = (function () {
     function AppModule() {
     }
     return AppModule;
 }());
 AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_3__navbar_navbar_component__["a" /* NavbarComponent */],
@@ -212,25 +210,21 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_10__projects_projects_component__["a" /* ProjectsComponent */],
             __WEBPACK_IMPORTED_MODULE_11__project_item_project_item_component__["a" /* ProjectItemComponent */],
             __WEBPACK_IMPORTED_MODULE_12__search_project_search_project_component__["a" /* SearchProjectComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__header_header_component__["a" /* HeaderComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__search_search_component__["a" /* SearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__category_block_category_block_component__["a" /* CategoryBlockComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__main_menu_main_menu_component__["a" /* MainMenuComponent */],
-            __WEBPACK_IMPORTED_MODULE_20__project_detail_info_project_detail_info_component__["a" /* ProjectDetailInfoComponent */]
+            __WEBPACK_IMPORTED_MODULE_14__header_header_component__["a" /* HeaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__search_search_component__["a" /* SearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__category_block_category_block_component__["a" /* CategoryBlockComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__main_menu_main_menu_component__["a" /* MainMenuComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__project_detail_info_project_detail_info_component__["a" /* ProjectDetailInfoComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_7__angular_forms__["c" /* ReactiveFormsModule */],
             __WEBPACK_IMPORTED_MODULE_7__angular_forms__["b" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_14__angular_router__["a" /* RouterModule */].forRoot([
-                { path: '', redirectTo: 'repoList', pathMatch: 'prefix' },
-                { path: 'repoList', component: __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */] }
-            ]),
             __WEBPACK_IMPORTED_MODULE_5_ng2_webstorage__["a" /* Ng2Webstorage */].forRoot({ prefix: 'epamghio', separator: '-' }),
             __WEBPACK_IMPORTED_MODULE_4__angular_http__["c" /* HttpModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_13__service_project_service__["a" /* ProjectService */], __WEBPACK_IMPORTED_MODULE_19__service_category_service__["a" /* CategoryService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_13__service_project_service__["a" /* ProjectService */], __WEBPACK_IMPORTED_MODULE_18__service_category_service__["a" /* CategoryService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -288,7 +282,7 @@ var CategoryBlockComponent = (function () {
     return CategoryBlockComponent;
 }());
 CategoryBlockComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-category-block',
         template: __webpack_require__("../../../../../src/app/category-block/category-block.component.html"),
         styles: [__webpack_require__("../../../../../src/app/category-block/category-block.component.css")]
@@ -349,7 +343,7 @@ var FooterComponent = (function () {
     return FooterComponent;
 }());
 FooterComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-footer',
         template: __webpack_require__("../../../../../src/app/footer/footer.component.html"),
         styles: [__webpack_require__("../../../../../src/app/footer/footer.component.css")]
@@ -410,7 +404,7 @@ var HeaderComponent = (function () {
     return HeaderComponent;
 }());
 HeaderComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-header',
         template: __webpack_require__("../../../../../src/app/header/header.component.html"),
         styles: [__webpack_require__("../../../../../src/app/header/header.component.css")]
@@ -495,7 +489,7 @@ var MainMenuComponent = (function () {
     return MainMenuComponent;
 }());
 MainMenuComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-main-menu',
         template: __webpack_require__("../../../../../src/app/main-menu/main-menu.component.html"),
         styles: [__webpack_require__("../../../../../src/app/main-menu/main-menu.component.css")]
@@ -625,7 +619,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
 }());
 NavbarComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-navbar',
         template: __webpack_require__("../../../../../src/app/navbar/navbar.component.html"),
         styles: [__webpack_require__("../../../../../src/app/navbar/navbar.component.css")]
@@ -694,7 +688,7 @@ var ProjectDetailInfoComponent = (function () {
     return ProjectDetailInfoComponent;
 }());
 ProjectDetailInfoComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-project-detail-info',
         template: __webpack_require__("../../../../../src/app/project-detail-info/project-detail-info.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project-detail-info/project-detail-info.component.css")]
@@ -728,7 +722,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/project-item/project-item.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"project-item\">\n  <div class=\"header\">\n    <a href=\"#\" class=\"name\">{{project.name}}</a>\n    <span class=\"category\">{{project.category}}</span>\n  </div>\n  <div class=\"description\">\n    <p>\n      {{project.description}}\n    </p>\n  </div>\n  <div class=\"footer\">\n    <span class=\"lang-label {{project.language}}\"></span>\n    <span class=\"language\">{{project.language}}</span>\n    <!--<span class=\"separator\"></span>-->\n    <!--<span class=\"licence\">{{project.licence}}</span>-->\n    <div class=\"more-or-less-block\" (click)=\"selectBlock(project.name)\">\n      <span *ngIf=\"activeProject\" class=\"more-or-less-label\">Less</span>\n      <svg *ngIf=\"activeProject\" class=\"more-or-less-icon\">\n        <path\n          d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n          transform=\"translate(12.000000, 10.000000) rotate(225.000000) translate(-12.000000, -15.000000) \"></path>\n      </svg>\n      <span *ngIf=\"!activeProject\" class=\"more-or-less-label\">More</span>\n      <svg *ngIf=\"!activeProject\" class=\"more-or-less-icon\">\n        <path\n          d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n          transform=\"translate(12.000000, 10.000000) rotate(45.000000) translate(-12.000000, -10.000000) \"></path>\n      </svg>\n    </div>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"project-item\">\n  <div class=\"header\">\n    <a href=\"{{project.githubUrl}}\" class=\"name\">{{project.name}}</a>\n    <span class=\"category\">{{project.category}}</span>\n  </div>\n  <div class=\"description\">\n    <p>\n      {{project.description}}\n    </p>\n  </div>\n  <div class=\"footer\">\n    <span class=\"lang-label {{project.language}}\"></span>\n    <span class=\"language\">{{project.language}}</span>\n    <!--<span class=\"separator\"></span>-->\n    <!--<span class=\"licence\">{{project.licence}}</span>-->\n    <div class=\"more-or-less-block\" (click)=\"selectBlock(project.name)\">\n      <span *ngIf=\"activeProject\" class=\"more-or-less-label\">Less</span>\n      <svg *ngIf=\"activeProject\" class=\"more-or-less-icon\">\n        <path\n          d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n          transform=\"translate(12.000000, 10.000000) rotate(225.000000) translate(-12.000000, -15.000000) \"></path>\n      </svg>\n      <span *ngIf=\"!activeProject\" class=\"more-or-less-label\">More</span>\n      <svg *ngIf=\"!activeProject\" class=\"more-or-less-icon\">\n        <path\n          d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n          transform=\"translate(12.000000, 10.000000) rotate(45.000000) translate(-12.000000, -10.000000) \"></path>\n      </svg>\n    </div>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -765,15 +759,15 @@ var ProjectItemComponent = (function () {
     return ProjectItemComponent;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
     __metadata("design:type", Object)
 ], ProjectItemComponent.prototype, "activeProject", void 0);
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__model_Project__["a" /* Project */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__model_Project__["a" /* Project */]) === "function" && _a || Object)
 ], ProjectItemComponent.prototype, "project", void 0);
 ProjectItemComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-project-item',
         template: __webpack_require__("../../../../../src/app/project-item/project-item.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project-item/project-item.component.css")]
@@ -899,7 +893,7 @@ var ProjectsComponent = (function () {
     return ProjectsComponent;
 }());
 ProjectsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-projects',
         template: __webpack_require__("../../../../../src/app/projects/projects.component.html"),
         styles: [__webpack_require__("../../../../../src/app/projects/projects.component.css")]
@@ -994,7 +988,7 @@ var SearchProjectComponent = (function () {
     return SearchProjectComponent;
 }());
 SearchProjectComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-search-project',
         template: __webpack_require__("../../../../../src/app/search-project/search-project.component.html"),
         styles: [__webpack_require__("../../../../../src/app/search-project/search-project.component.css")]
@@ -1066,7 +1060,7 @@ var SearchComponent = (function () {
     return SearchComponent;
 }());
 SearchComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'epamghio-search',
         template: __webpack_require__("../../../../../src/app/search/search.component.html"),
         styles: [__webpack_require__("../../../../../src/app/search/search.component.css")]
@@ -1141,7 +1135,7 @@ var CategoryService = (function () {
     return CategoryService;
 }());
 CategoryService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])()
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
 ], CategoryService);
 
 //# sourceMappingURL=category.service.js.map
@@ -1215,10 +1209,10 @@ var ProjectService = (function () {
         this.http = http;
         this.categoryService = categoryService;
         this.sanitizer = sanitizer;
-        this.searchEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]();
+        this.searchEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
         this.search$ = this.searchEvent.scan(function (acc, curr) { return Object.assign({}, acc, curr); }, {});
-        this.activeProjectEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]();
-        this.projectSelectedEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]();
+        this.activeProjectEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this.projectSelectedEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
     }
     ProjectService.prototype.search = function (searchObject) {
         var _this = this;
@@ -1311,6 +1305,7 @@ var ProjectService = (function () {
     };
     ProjectService.prototype.getLanguages = function (repoName) {
         var _this = this;
+        // return this.http.get(`/languages`)
         return this.http.get("https://api.github.com/repos/epam/" + repoName + "/languages")
             .map(function (resp) { return resp.json(); })
             .map(function (it) { return _this.processLanguagesObject(it); });
@@ -1321,7 +1316,8 @@ var ProjectService = (function () {
         var sum = nameWithNumbers
             .reduce(function (result, nameWithNumber) { return result + nameWithNumber.num; }, 0);
         nameWithNumbers = this.shortLanguagesListIfNeeded(nameWithNumbers);
-        return this.getPercentOfCodeFromLinesOfCode(nameWithNumbers, sum);
+        return this.getPercentOfCodeFromLinesOfCode(nameWithNumbers, sum)
+            .filter(function (it) { return it.percent > 0.01; });
     };
     ProjectService.prototype.getPercentOfCodeFromLinesOfCode = function (nameWithNumbers, sum) {
         var languages = [];
@@ -1346,7 +1342,7 @@ var ProjectService = (function () {
     return ProjectService;
 }());
 ProjectService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_11__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_11__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_14__category_service__["a" /* CategoryService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_14__category_service__["a" /* CategoryService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["c" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["c" /* DomSanitizer */]) === "function" && _c || Object])
 ], ProjectService);
 
@@ -1407,7 +1403,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_24" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_21" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
