@@ -1216,9 +1216,9 @@ var ProjectService = (function () {
     }
     ProjectService.prototype.search = function (searchObject) {
         var _this = this;
-        this.http.request('https://jsonplaceholder.typicode.com/users')
-            .map(function (resp) { return resp.json(); })
-            .subscribe(function (it) { return console.log(it.length); });
+        // this.http.request('https://jsonplaceholder.typicode.com/users')
+        //     .map(function (resp) { return resp.json(); })
+        //     .subscribe(function (it) { return console.log(it.length); });
         var filter = searchObject.filter || '';
         var language = searchObject.language || '';
         var category = searchObject.category || 0;
