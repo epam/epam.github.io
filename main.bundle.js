@@ -1356,7 +1356,7 @@ var ProjectService = ProjectService_1 = (function () {
     };
     ProjectService.prototype.getLanguages = function (repoName) {
         var _this = this;
-        return this.http.get("https://api.github.com/repos/epam/" + repoName + "/languages")
+        return this.http.get("https://fakeuser2901:SomeFakePassword@api.github.com/repos/epam/" + repoName + "/languages")
             .map(function (resp) { return resp.json(); })
             .map(function (it) { return _this.processLanguagesObject(it); });
     };
