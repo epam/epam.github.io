@@ -1325,7 +1325,7 @@ var ProjectService = ProjectService_1 = (function () {
         var sortOrder = searchObject.orderByAscUpdatedAt;
         var queryParam = "q=org:epam+" + filter + "+in:name+in:readme+in:description";
         if (language)
-            queryParam += "+language=" + language;
+            queryParam += "+language:" + language;
         var request = new __WEBPACK_IMPORTED_MODULE_11__angular_http__["d" /* Request */]({ url: 'https://fakeuser2901:SomeFakePassword@api.github.com/search/repositories', params: queryParam });
         request.method = __WEBPACK_IMPORTED_MODULE_11__angular_http__["e" /* RequestMethod */].Get;
         request.headers = new __WEBPACK_IMPORTED_MODULE_11__angular_http__["a" /* Headers */]({ 'content-type': 'application/json' });
@@ -1358,8 +1358,7 @@ var ProjectService = ProjectService_1 = (function () {
         var _this = this;
         return this.http.get("https://api.github.com/repos/epam/" + repoName + "/languages")
             .map(function (resp) { return resp.json(); })
-            .map(function (it) { return _this.processLanguagesObject(it); })
-            .do(function (it) { return console.log(it); });
+            .map(function (it) { return _this.processLanguagesObject(it); });
     };
     ProjectService.prototype.processLanguagesObject = function (langJson) {
         var nameWithNumbers = Object.keys(langJson)
