@@ -62,7 +62,7 @@ var AboutComponent = (function () {
     return AboutComponent;
 }());
 AboutComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-about',
         template: __webpack_require__("../../../../../src/app/about/about.component.html"),
         styles: [__webpack_require__("../../../../../src/app/about/about.component.css")]
@@ -95,7 +95,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<epamghio-header></epamghio-header>\n<epamghio-search></epamghio-search>\n<epamghio-main-menu></epamghio-main-menu>\n<epamghio-projects></epamghio-projects>\n"
+module.exports = "<epamghio-header></epamghio-header>\n<epamghio-search></epamghio-search>\n<epamghio-main-menu></epamghio-main-menu>\n<epamghio-projects></epamghio-projects>\n\n"
 
 /***/ }),
 
@@ -132,7 +132,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -169,6 +169,9 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__main_menu_main_menu_component__ = __webpack_require__("../../../../../src/app/main-menu/main-menu.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__service_category_service__ = __webpack_require__("../../../../../src/app/service/category.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__project_detail_info_project_detail_info_component__ = __webpack_require__("../../../../../src/app/project-detail-info/project-detail-info.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__language_select_language_select_component__ = __webpack_require__("../../../../../src/app/language-select/language-select.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ng2_select__ = __webpack_require__("../../../../ng2-select/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ng2_select___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_ng2_select__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -195,13 +198,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
     return AppModule;
 }());
 AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_3__navbar_navbar_component__["a" /* NavbarComponent */],
@@ -214,15 +219,17 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_15__search_search_component__["a" /* SearchComponent */],
             __WEBPACK_IMPORTED_MODULE_16__category_block_category_block_component__["a" /* CategoryBlockComponent */],
             __WEBPACK_IMPORTED_MODULE_17__main_menu_main_menu_component__["a" /* MainMenuComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__project_detail_info_project_detail_info_component__["a" /* ProjectDetailInfoComponent */]
+            __WEBPACK_IMPORTED_MODULE_19__project_detail_info_project_detail_info_component__["a" /* ProjectDetailInfoComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__language_select_language_select_component__["a" /* LanguageSelectComponent */]
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_7__angular_forms__["c" /* ReactiveFormsModule */],
-            __WEBPACK_IMPORTED_MODULE_7__angular_forms__["b" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
+            __WEBPACK_IMPORTED_MODULE_7__angular_forms__["ReactiveFormsModule"],
+            __WEBPACK_IMPORTED_MODULE_7__angular_forms__["FormsModule"],
             __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
             __WEBPACK_IMPORTED_MODULE_5_ng2_webstorage__["a" /* Ng2Webstorage */].forRoot({ prefix: 'epamghio', separator: '-' }),
-            __WEBPACK_IMPORTED_MODULE_4__angular_http__["c" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_4__angular_http__["c" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_21_ng2_select__["SelectModule"]
         ],
         providers: [__WEBPACK_IMPORTED_MODULE_13__service_project_service__["a" /* ProjectService */], __WEBPACK_IMPORTED_MODULE_18__service_category_service__["a" /* CategoryService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
@@ -282,7 +289,7 @@ var CategoryBlockComponent = (function () {
     return CategoryBlockComponent;
 }());
 CategoryBlockComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-category-block',
         template: __webpack_require__("../../../../../src/app/category-block/category-block.component.html"),
         styles: [__webpack_require__("../../../../../src/app/category-block/category-block.component.css")]
@@ -343,7 +350,7 @@ var FooterComponent = (function () {
     return FooterComponent;
 }());
 FooterComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-footer',
         template: __webpack_require__("../../../../../src/app/footer/footer.component.html"),
         styles: [__webpack_require__("../../../../../src/app/footer/footer.component.css")]
@@ -363,7 +370,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".header {\n  height: 60px;\n  background-color: #FFFFFF;\n  padding: 0 55px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.logo {\n  background-image: url(" + __webpack_require__("../../../../../src/assets/epam-logo.svg") + ");\n  display: inline-block;\n  margin-top: 5px;\n  width: 78px;\n  height: 28px;\n}\n\n.oval {\n  border-radius: 30px;\n  display: inline-block;\n  height: 33px;\n  width: 33px;\n  background-color: #6B6D6F;\n  margin-left: 5px;\n}\n", ""]);
+exports.push([module.i, ".header {\n  height: 60px;\n  background-color: #FFFFFF;\n  padding: 0 55px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.logo {\n  background-image: url(" + __webpack_require__("../../../../../src/assets/epam-logo.svg") + ");\n  display: inline-block;\n  margin-top: 5px;\n  width: 78px;\n  height: 28px;\n}\n", ""]);
 
 // exports
 
@@ -404,7 +411,7 @@ var HeaderComponent = (function () {
     return HeaderComponent;
 }());
 HeaderComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-header',
         template: __webpack_require__("../../../../../src/app/header/header.component.html"),
         styles: [__webpack_require__("../../../../../src/app/header/header.component.css")]
@@ -416,6 +423,83 @@ HeaderComponent = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/language-select/language-select.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".language-wrapper {\n  width: 260px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\n.language-wrapper ng-select {\n  width: 180px;\n}\n\n.language-label {\n  font-size: 16px;\n  line-height: 20px;\n  color: #999999;\n  width: 70px;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/language-select/language-select.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"language-wrapper\">\n  <span class=\"language-label\">Language:</span>\n  <ng-select [items]=\"items\"\n             (data)=\"refreshValue($event)\"\n             (selected)=\"selected($event)\"\n             [active]=\"[{id: ANY_VALUE, text: ANY_VALUE}]\"\n             placeholder=\"Any Language\">\n  </ng-select>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/language-select/language-select.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LanguageSelectComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_project_service__ = __webpack_require__("../../../../../src/app/service/project.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LanguageSelectComponent = (function () {
+    function LanguageSelectComponent(projectService) {
+        this.projectService = projectService;
+        this.ANY_VALUE = 'Any';
+        this.items = [
+            this.ANY_VALUE,
+            'Java', 'C', 'C++', 'Objective-C',
+            'Ruby', 'Python', 'Javascript', 'Html',
+            'CSS', 'Typescript', 'C#', 'Erlang'
+        ];
+        this.value = { id: this.ANY_VALUE, text: this.ANY_VALUE };
+    }
+    LanguageSelectComponent.prototype.selected = function (value) {
+        this.projectService.searchEvent.emit({ language: value.id === this.ANY_VALUE ? '' : value.id });
+    };
+    LanguageSelectComponent.prototype.refreshValue = function (value) {
+        this.value = value;
+    };
+    return LanguageSelectComponent;
+}());
+LanguageSelectComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'epamghio-language-select',
+        template: __webpack_require__("../../../../../src/app/language-select/language-select.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/language-select/language-select.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__service_project_service__["a" /* ProjectService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__service_project_service__["a" /* ProjectService */]) === "function" && _a || Object])
+], LanguageSelectComponent);
+
+var _a;
+//# sourceMappingURL=language-select.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/main-menu/main-menu.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -424,7 +508,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".menu-wrapper {\n  padding: 34px 0;\n  margin: 0 55px;\n  border-bottom: 1px solid rgba(204, 204, 204, 0.55);\n}\n\n.main-menu {\n  height: 36px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.floating-empty-block {\n  -webkit-box-flex: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2;\n}\n\n.language-select {\n  margin-top:-12px;\n  border: 1px solid #E5E5E5;\n  /*background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;*/\n  width: 180px;\n  height: 36px;\n  overflow: hidden;\n}\n\n.language-select select {\n  background: transparent;\n  outline: none;\n  border: none;\n  font-size: 14px;\n  width: 180px;\n  color: #464547;\n  line-height: 12px;\n  height: 36px;\n}\n\n.date-label {\n  margin-top:-12px;\n  margin-left: 30px;\n  color: #464547;\n  font-size: 16px;\n  line-height: 20px;\n  padding-right: 6px;\n}\n\n.arrow-down {\n  margin-top:-12px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 7px solid #666666;\n}\n\n.arrow-up {\n  margin-top:-12px;\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-bottom: 7px solid #666666;\n}\n\n.link {\n  color: #464547;\n  font-size: 16px;\n  line-height: 20px;\n  margin-right: 38px;\n  text-decoration: none;\n  padding-bottom: 10px;\n}\n\n.active.link {\n  color: #464547;\n  font-weight: 600;\n  border-bottom: 2px solid #38C2D7;\n}\n\n.date-block {\n  cursor: pointer;\n  height: 36px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n", ""]);
+exports.push([module.i, ".menu-wrapper {\n  padding: 34px 0;\n  margin: 0 55px;\n  border-bottom: 1px solid rgba(204, 204, 204, 0.55);\n}\n\n.main-menu {\n  height: 36px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.floating-empty-block {\n  -webkit-box-flex: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2;\n}\n\n.language-select {\n  border: 1px solid #E5E5E5;\n  width: 180px;\n  height: 36px;\n  overflow: hidden;\n}\n\n.language-select select {\n  background: transparent;\n  outline: none;\n  border: none;\n  font-size: 14px;\n  width: 180px;\n  color: #464547;\n  line-height: 12px;\n  height: 36px;\n}\n\n.date-label {\n  margin-left: 30px;\n  color: #464547;\n  font-size: 16px;\n  line-height: 20px;\n  padding-right: 6px;\n}\n\n.arrow-down {\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-top: 7px solid #666666;\n}\n\n.arrow-up {\n  width: 0;\n  height: 0;\n  border-left: 4px solid transparent;\n  border-right: 4px solid transparent;\n  border-bottom: 7px solid #666666;\n}\n\n.link {\n  color: #464547;\n  font-size: 16px;\n  line-height: 20px;\n  margin-right: 38px;\n  text-decoration: none;\n  padding-bottom: 10px;\n}\n\n.active.link {\n  color: #464547;\n  font-weight: 600;\n  border-bottom: 2px solid #38C2D7;\n}\n\n.date-block {\n  cursor: pointer;\n  height: 36px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n", ""]);
 
 // exports
 
@@ -437,7 +521,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/main-menu/main-menu.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"menu-wrapper\">\n  <div class=\"main-menu\">\n    <!--<div class=\"left-block\">-->\n    <a *ngIf=\"activeCategory !== 0\" href=\"#\" class=\"link\" (click)=\"chooseActiveCategory($event, 0)\">\n      All\n    </a>\n    <span *ngIf=\"activeCategory === 0\" class=\"active link\">All</span>\n    <a href=\"#\" *ngFor=\"let category of categories;\"\n       ngClass=\"{{activeCategory == category.id ? 'active link' : 'link'}}\"\n       (click)=\"chooseActiveCategory($event, category.id)\">\n      {{category.name}}\n    </a>\n    <div class=\"floating-empty-block\"></div>\n    <div class=\"date-block\" (click)=\"changeUpdateAtOrdering()\">\n      <span class=\"date-label\">Date</span>\n      <div *ngIf=\"updateAtAscOrdering\" class=\"arrow-up\"></div>\n      <div *ngIf=\"!updateAtAscOrdering\" class=\"arrow-down\"></div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"menu-wrapper\">\n  <div class=\"main-menu\">\n    <a *ngIf=\"activeCategory !== 0\" href=\"#\" class=\"link\" (click)=\"chooseActiveCategory($event, 0)\">\n      All\n    </a>\n    <span *ngIf=\"activeCategory === 0\" class=\"active link\">All</span>\n    <a href=\"#\" *ngFor=\"let category of categories;\"\n       ngClass=\"{{activeCategory == category.id ? 'active link' : 'link'}}\"\n       (click)=\"chooseActiveCategory($event, category.id)\">\n      {{category.name}}\n    </a>\n    <div class=\"floating-empty-block\"></div>\n    <epamghio-language-select></epamghio-language-select>\n    <div class=\"date-block\" (click)=\"changeUpdateAtOrdering()\">\n      <span class=\"date-label\">Date</span>\n      <div *ngIf=\"updateAtAscOrdering\" class=\"arrow-up\"></div>\n      <div *ngIf=\"!updateAtAscOrdering\" class=\"arrow-down\"></div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -489,7 +573,7 @@ var MainMenuComponent = (function () {
     return MainMenuComponent;
 }());
 MainMenuComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-main-menu',
         template: __webpack_require__("../../../../../src/app/main-menu/main-menu.component.html"),
         styles: [__webpack_require__("../../../../../src/app/main-menu/main-menu.component.css")]
@@ -525,9 +609,14 @@ var Language = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Project; });
 var Project = (function () {
-    function Project(id, name, category, language, licence, description, githubUrl, forkCount, issueCount, updatedAt) {
+    function Project(id, name, org, category, language, licence, description, githubUrl, forkCount, issueCount, 
+        // public commitCount: number,
+        // public contributorCount: number,
+        // public languages: Language[],
+        updatedAt) {
         this.id = id;
         this.name = name;
+        this.org = org;
         this.category = category;
         this.language = language;
         this.licence = licence;
@@ -541,32 +630,6 @@ var Project = (function () {
 }());
 
 //# sourceMappingURL=Project.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/model/ProjectDetailInfo.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectDetailInfo; });
-var ProjectDetailInfo = (function () {
-    function ProjectDetailInfo(id, name, githubUrl, readMe, lastUpdated, languages, licence, commitCount, contributorCount, forkCount, issueCount) {
-        this.id = id;
-        this.name = name;
-        this.githubUrl = githubUrl;
-        this.readMe = readMe;
-        this.lastUpdated = lastUpdated;
-        this.languages = languages;
-        this.licence = licence;
-        this.commitCount = commitCount;
-        this.contributorCount = contributorCount;
-        this.forkCount = forkCount;
-        this.issueCount = issueCount;
-    }
-    return ProjectDetailInfo;
-}());
-
-//# sourceMappingURL=ProjectDetailInfo.js.map
 
 /***/ }),
 
@@ -619,7 +682,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
 }());
 NavbarComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-navbar',
         template: __webpack_require__("../../../../../src/app/navbar/navbar.component.html"),
         styles: [__webpack_require__("../../../../../src/app/navbar/navbar.component.css")]
@@ -639,7 +702,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".project-detail-info {\n  padding: 35px;\n  box-sizing: border-box;\n  border: 1px solid rgba(204, 204, 204, 0.55);\n  background-color: #FFFFFF;\n  margin-bottom: 35px;\n}\n\n.header {\n  color: #6B6D6F;\n  font-size: 24px;\n  font-weight: 600;\n  line-height: 31px;\n  margin-bottom: 16px;\n}\n\n.link-to-github {\n  color: #38C2D7;\n  font-size: 14px;\n  line-height: 18px;\n}\n\n.center-block {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n\n.empty-block {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 100px;\n          flex: 0 0 100px;\n}\n\n.description {\n  -webkit-box-flex: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2;\n  border-bottom: 1px solid rgba(204, 204, 204, 0.55);\n}\n\n.description-text {\n  max-height: 360px;\n  overflow: hidden;\n  margin-top: 34px;\n  color: #999999;\n  font-size: 16px;\n  line-height: 25px;\n  margin-bottom: 16px;\n}\n\n.right-arrow {\n  width: 22px;\n  height: 22px;\n}\n\n.right-block {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 300px;\n          flex: 0 0 300px;\n  padding-left: 34px;\n  border-left: 1px solid rgba(204, 204, 204, 0.55);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.languages-label, .updated-label {\n  font-size: 16px;\n  line-height: 20px;\n  color: #999999;\n}\n\n.updated-label {\n  margin-top: 34px;\n  display: inline-block;\n  margin-bottom: 14px;\n}\n\n.updated {\n  color: #6B6D6F;\n  font-size: 16px;\n  line-height: 20px;\n}\n\nol {\n  padding-left: 0;\n}\n\nli {\n  list-style: none;\n  margin-top: 16px;\n  margin-bottom: 16px;\n}\n\n.lang-label {\n  margin-right: 13px;\n}\n\n.full-description-block {\n  display: -webkit-inline-box;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  color: #666666;\n  font-size: 16px;\n  line-height: 20px;\n  margin-bottom: 34px;\n  cursor: pointer;\n}\n\n.full-description-block:hover {\n  color: #38C2D7;\n}\n\n.full-description-block:hover svg {\n  fill: #38C2D7;\n}\n\n.footer {\n  padding-top: 23px;\n}\n\n.footer .number {\n  color: #666666;\n  font-size: 14px;\n  line-height: 20px;\n}\n\n.footer .characteristic {\n  color: #666666;\n  font-size: 14px;\n  line-height: 20px;\n  font-weight: 100;\n}\n\n.separator {\n  width: 2px;\n  border: 1px solid #CCCCCC;\n  box-sizing: border-box;\n  height: 10px;\n  margin-left: 35px;\n  margin-right: 33px;\n}\n", ""]);
+exports.push([module.i, ".project-detail-info {\n  padding: 35px;\n  box-sizing: border-box;\n  border: 1px solid rgba(204, 204, 204, 0.55);\n  background-color: #FFFFFF;\n  margin-bottom: 35px;\n}\n\n.header {\n  color: #6B6D6F;\n  font-size: 24px;\n  font-weight: 600;\n  line-height: 31px;\n  margin-bottom: 16px;\n}\n\n.link-to-github {\n  color: #38C2D7;\n  font-size: 14px;\n  line-height: 18px;\n}\n\n.center-block {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n\n.empty-block {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 100px;\n          flex: 0 0 100px;\n}\n\n.description {\n  -webkit-box-flex: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2;\n  border-bottom: 1px solid rgba(204, 204, 204, 0.55);\n}\n\n.description-text {\n  max-height: 360px;\n  overflow: hidden;\n  margin-top: 34px;\n  color: #999999;\n  font-size: 16px;\n  line-height: 25px;\n  margin-bottom: 16px;\n  word-break: break-word;\n}\n\n.right-arrow {\n  width: 22px;\n  height: 22px;\n}\n\n.right-block {\n  -webkit-box-flex: 0;\n      -ms-flex: 0 0 300px;\n          flex: 0 0 300px;\n  padding-left: 34px;\n  border-left: 1px solid rgba(204, 204, 204, 0.55);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.languages-label, .updated-label {\n  font-size: 16px;\n  line-height: 20px;\n  color: #999999;\n}\n\n.updated-label {\n  margin-top: 34px;\n  display: inline-block;\n  margin-bottom: 14px;\n}\n\n.updated {\n  color: #6B6D6F;\n  font-size: 16px;\n  line-height: 20px;\n}\n\nol {\n  padding-left: 0;\n}\n\nli {\n  list-style: none;\n  margin-top: 16px;\n  margin-bottom: 16px;\n}\n\n.lang-label {\n  margin-right: 13px;\n}\n\n.full-description-block {\n  display: -webkit-inline-box;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  color: #666666;\n  font-size: 16px;\n  line-height: 20px;\n  margin-bottom: 34px;\n  cursor: pointer;\n}\n\n.full-description-block:hover {\n  color: #38C2D7;\n}\n\n.full-description-block:hover svg {\n  fill: #38C2D7;\n}\n\n.footer {\n  padding-top: 23px;\n}\n\n.footer .number {\n  color: #666666;\n  font-size: 14px;\n  line-height: 20px;\n}\n\n.footer .characteristic {\n  color: #666666;\n  font-size: 14px;\n  line-height: 20px;\n  font-weight: 100;\n}\n\n.separator {\n  width: 2px;\n  border: 1px solid #CCCCCC;\n  box-sizing: border-box;\n  height: 10px;\n  margin-left: 35px;\n  margin-right: 33px;\n}\n", ""]);
 
 // exports
 
@@ -652,7 +715,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/project-detail-info/project-detail-info.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-md-12 project-detail-info\">\n  <div class=\"header\">{{detail.name}}</div>\n  <div class=\"center-block\">\n    <div class=\"description\">\n      <a href=\"{{detail.githubUrl}}\" class=\"link-to-github\">{{detail.githubUrl}}</a>\n      <div class=\"description-text\">\n        <div [innerHtml]=\"detail.readMe | async\">\n        </div>\n      </div>\n      <a class=\"full-description-block\" href=\"{{detail.githubUrl}}/blob/master/README.md\">\n        <span>Full Description</span>\n        <svg class=\"right-arrow\">\n          <path\n            d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n            id=\"Combined-Shape-Copy\"\n            transform=\"translate(12.000000, 10.000000) rotate(-45.000000) translate(-13.000000, -10.000000) \">\n          </path>\n        </svg>\n      </a>\n    </div>\n    <div class=\"empty-block\"></div>\n    <div class=\"right-block\">\n      <div class=\"languages-block\">\n        <span class=\"languages-label\">LANGUAGES:</span>\n        <ol>\n          <li *ngFor=\"let language of detail.languages | async\">\n            <span class=\"lang-label small {{language.name}}\"></span>\n            <span class=\"language\">{{language.name}}</span>\n            <span class=\"language-percentage\">{{language.percent}}%</span>\n          </li>\n        </ol>\n      </div>\n      <div class=\"updated-at-block\">\n        <span class=\"updated-label\">UPDATED:</span>\n        <br>\n        <span class=\"updated\">{{detail.lastUpdated}}</span>\n      </div>\n    </div>\n  </div>\n  <div class=\"footer\">\n    <span class=\"number\">{{detail.commitCount | async}}</span>\n    <span class=\"characteristic\"> Commits</span>\n    <span class=\"separator\"></span>\n    <span class=\"number\">{{detail.contributorCount | async}}</span>\n    <span class=\"characteristic\"> Contributions</span>\n    <span *ngIf=\"detail.issueCount !== 0\" class=\"separator\"></span>\n    <span *ngIf=\"detail.issueCount !== 0\" class=\"number\">{{detail.issueCount}}</span>\n    <span *ngIf=\"detail.issueCount !== 0\" class=\"characteristic\"> Issues</span>\n    <span *ngIf=\"detail.forkCount !== 0\" class=\"separator\"></span>\n    <span *ngIf=\"detail.forkCount !== 0\" class=\"number\">{{detail.forkCount}}</span>\n    <span *ngIf=\"detail.forkCount !== 0\" class=\"characteristic\"> Forks</span>\n  </div>\n</div>\n\n"
+module.exports = "<div *ngIf=\"detail !== null\" class=\"col-md-12 project-detail-info\">\n  <div class=\"header\">{{detail.name}}</div>\n  <div class=\"center-block\">\n    <div class=\"description\">\n      <a href=\"{{detail.githubUrl}}\" class=\"link-to-github\">{{detail.githubUrl}}</a>\n      <div class=\"description-text\">\n        <div [innerHtml]=\"readMe | async\">\n        </div>\n      </div>\n      <a class=\"full-description-block\" href=\"{{detail.githubUrl}}/blob/master/README.md\">\n        <span>Full Description</span>\n        <svg class=\"right-arrow\">\n          <path\n            d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n            id=\"Combined-Shape-Copy\"\n            transform=\"translate(12.000000, 10.000000) rotate(-45.000000) translate(-13.000000, -10.000000) \">\n          </path>\n        </svg>\n      </a>\n    </div>\n    <div class=\"empty-block\"></div>\n    <div class=\"right-block\">\n      <div class=\"languages-block\">\n        <span class=\"languages-label\">LANGUAGES:</span>\n        <ol>\n          <li *ngFor=\"let language of languages | async\">\n            <span class=\"lang-label small {{language.name}}\"></span>\n            <span class=\"language\">{{language.name}}</span>\n            <span class=\"language-percentage\">{{language.percent}}%</span>\n          </li>\n        </ol>\n      </div>\n      <div class=\"updated-at-block\" *ngIf=\"detail.updatedAt != null\">\n        <span class=\"updated-label\">UPDATED:</span>\n        <br>\n        <span class=\"updated\">{{detail.updatedAt.format('on MMM DD, YYYY')}}</span>\n      </div>\n    </div>\n  </div>\n  <div class=\"footer\">\n    <span class=\"number\">{{detail.commitCount}}</span>\n    <span class=\"characteristic\"> Commits</span>\n    <span class=\"separator\"></span>\n    <span class=\"number\">{{contributorCount | async}}</span>\n    <span class=\"characteristic\"> Contributors</span>\n    <span *ngIf=\"detail.issueCount !== 0\" class=\"separator\"></span>\n    <span *ngIf=\"detail.issueCount !== 0\" class=\"number\">{{detail.issueCount}}</span>\n    <span *ngIf=\"detail.issueCount !== 0\" class=\"characteristic\"> Issues</span>\n    <span *ngIf=\"detail.forkCount !== 0\" class=\"separator\"></span>\n    <span *ngIf=\"detail.forkCount !== 0\" class=\"number\">{{detail.forkCount}}</span>\n    <span *ngIf=\"detail.forkCount !== 0\" class=\"characteristic\"> Forks</span>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -663,6 +726,10 @@ module.exports = "<div class=\"col-md-12 project-detail-info\">\n  <div class=\"
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectDetailInfoComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_project_service__ = __webpack_require__("../../../../../src/app/service/project.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_marky_markdown__ = __webpack_require__("../../../../marky-markdown/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_marky_markdown___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_marky_markdown__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -674,29 +741,70 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
+
 var ProjectDetailInfoComponent = (function () {
-    function ProjectDetailInfoComponent(projectService) {
+    function ProjectDetailInfoComponent(http, projectService, sanitizer) {
+        this.http = http;
         this.projectService = projectService;
+        this.sanitizer = sanitizer;
         this.detail = null;
+        this.readMe = null;
     }
     ProjectDetailInfoComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.detail = this.projectService.projectSelectedEvent.subscribe(function (project) {
-            _this.detail = project;
+            if (project != null) {
+                _this.detail = project;
+                _this.readMe = _this.http.get("https://raw.githubusercontent.com/" + project.org + "/" + project.name + "/master/README.md")
+                    .map(function (it) { return it.text(); })
+                    .map(function (it) { return _this._processText(it); })
+                    .map(function (it) { return _this.sanitizer.bypassSecurityTrustHtml(__WEBPACK_IMPORTED_MODULE_3_marky_markdown___default()(it)); });
+                _this.languages = _this.projectService.getLanguages(project.name);
+                _this.contributorCount = _this.projectService.getContributorCount(project.name);
+            }
         });
+    };
+    ProjectDetailInfoComponent.prototype._processText = function (text) {
+        var strings = text.split('\n')
+            .map(function (it) { return it.replace(/&nbsp;/g, ''); })
+            .map(function (it) { return it.trim(); })
+            .filter(function (it) {
+            return !it.startsWith('=') &&
+                !it.startsWith('![') &&
+                !it.startsWith('#') &&
+                !it.startsWith('|') &&
+                !it.startsWith('--') &&
+                !it.startsWith('[');
+        });
+        var excludedLines = this._findLinesOfCode(strings);
+        return strings.filter(function (value, index) { return excludedLines.indexOf(index) === -1; }).join('\n');
+    };
+    ProjectDetailInfoComponent.prototype._findLinesOfCode = function (strings) {
+        var codeLineIndexes = [];
+        strings.forEach(function (str, index) {
+            if (str.startsWith('```'))
+                codeLineIndexes.push(index);
+        });
+        var result = Array();
+        for (var _i = 0; _i < codeLineIndexes.length || ((_i + 1) === codeLineIndexes.length); _i = _i + 2)
+            for (var _j = codeLineIndexes[_i]; _j <= codeLineIndexes[_i + 1]; _j++)
+                result.push(_j);
+        return result;
     };
     return ProjectDetailInfoComponent;
 }());
 ProjectDetailInfoComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-project-detail-info',
         template: __webpack_require__("../../../../../src/app/project-detail-info/project-detail-info.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project-detail-info/project-detail-info.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__service_project_service__["a" /* ProjectService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__service_project_service__["a" /* ProjectService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__service_project_service__["a" /* ProjectService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__service_project_service__["a" /* ProjectService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["DomSanitizer"]) === "function" && _c || Object])
 ], ProjectDetailInfoComponent);
 
-var _a;
+var _a, _b, _c;
 //# sourceMappingURL=project-detail-info.component.js.map
 
 /***/ }),
@@ -709,7 +817,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".project-item {\n  box-sizing: border-box;\n  height: 240px;\n  border: 1px solid rgba(204, 204, 204, 0.55);\n  background-color: #FFFFFF;\n  margin-bottom: 30px;\n}\n\n.header {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: baseline;\n      -ms-flex-align: baseline;\n          align-items: baseline;\n  padding: 17px 20px;\n  border-radius: 2px 2px 0 0;\n  background-color: #F2F4F9;\n}\n\n.name {\n  color: #38C2D7;\n  font-size: 16px; /* todo:xxx in order to full text stays in header */\n  font-weight: 600;\n  line-height: 31px;\n}\n\n.name:hover {\n  /* todo */\n}\n\n.category {\n  color: #999999;\n  font-size: 16px;\n  line-height: 20px;\n  text-align: right;\n}\n\n.description {\n  padding: 25px 20px 15px 20px;\n  color: rgba(107, 109, 111, 0.6);\n  color: #999999;\n  font-size: 16px;\n  line-height: 24px;\n}\n\n.description p {\n  display: block; /* Fallback for non-webkit */\n  display: -webkit-box;\n  max-width: 400px;\n  height: 75px;\n  /*margin: 0 auto;*/\n  line-height: 24px;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n\n.footer {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 10px 13px 35px 20px;\n}\n\n.language {\n  color: #999999;\n  padding-left: 9px;\n  font-size: 16px;\n  line-height: 20px;\n  padding-right: 9px;\n}\n\n.separator {\n  width: 2px;\n  border: 1px solid #CCCCCC;\n  box-sizing: border-box;\n  height: 10px;\n}\n\n.licence {\n  padding-left: 9px;\n  color: #666666;\n  font-size: 16px;\n  line-height: 20px;\n}\n\n.more-or-less-block {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -ms-flex-item-align: end;\n      align-self: flex-end;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-flex: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2;\n  cursor: pointer;\n}\n\n.more-or-less-block:hover .more-or-less-label {\n  color: #38C2D7; /* todo */\n}\n\n.more-or-less-block:hover .more-or-less-icon {\n  fill: #38C2D7;\n}\n\n.more-or-less-label {\n  text-align: right;\n  padding-right: 4px;;\n  color: #666666;\n  font-size: 16px;\n  line-height: 20px;\n}\n\n.more-or-less-icon {\n  width: 22px;\n  height: 22px;\n}\n", ""]);
+exports.push([module.i, ".project-item {\n  box-sizing: border-box;\n  height: 240px;\n  border: 1px solid rgba(204, 204, 204, 0.55);\n  background-color: #FFFFFF;\n  margin-bottom: 30px;\n}\n\n.header {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: baseline;\n      -ms-flex-align: baseline;\n          align-items: baseline;\n  padding: 17px 20px;\n  border-radius: 2px 2px 0 0;\n  background-color: #F2F4F9;\n}\n\n.name {\n  color: #38C2D7;\n  font-size: 23px; /* todo:xxx in order to full text stays in header */\n  font-weight: 600;\n  line-height: 31px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n\n.category {\n  color: #999999;\n  font-size: 16px;\n  line-height: 20px;\n  text-align: right;\n  padding-left: 10px;\n}\n\n.description {\n  padding: 25px 20px 15px 20px;\n  color: rgba(107, 109, 111, 0.6);\n  color: #999999;\n  font-size: 16px;\n  line-height: 24px;\n}\n\n.description p {\n  display: block; /* Fallback for non-webkit */\n  display: -webkit-box;\n  max-width: 400px;\n  height: 75px;\n  line-height: 24px;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n\n.footer {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 10px 13px 35px 20px;\n}\n\n.language {\n  color: #999999;\n  padding-left: 9px;\n  font-size: 16px;\n  line-height: 20px;\n  padding-right: 9px;\n}\n\n.separator {\n  width: 2px;\n  border: 1px solid #CCCCCC;\n  box-sizing: border-box;\n  height: 10px;\n}\n\n.licence {\n  padding-left: 9px;\n  color: #666666;\n  font-size: 16px;\n  line-height: 20px;\n}\n\n.more-or-less-block {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -ms-flex-item-align: end;\n      align-self: flex-end;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-flex: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2;\n  cursor: pointer;\n}\n\n.more-or-less-block:hover .more-or-less-label {\n  color: #38C2D7; /* todo */\n}\n\n.more-or-less-block:hover .more-or-less-icon {\n  fill: #38C2D7;\n}\n\n.more-or-less-label {\n  text-align: right;\n  padding-right: 4px;;\n  color: #666666;\n  font-size: 16px;\n  line-height: 20px;\n}\n\n.more-or-less-icon {\n  width: 22px;\n  height: 22px;\n}\n", ""]);
 
 // exports
 
@@ -722,7 +830,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/project-item/project-item.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"project-item\">\n  <div class=\"header\">\n    <a href=\"{{project.githubUrl}}\" class=\"name\">{{project.name}}</a>\n    <span class=\"category\">{{project.category}}</span>\n  </div>\n  <div class=\"description\">\n    <p>\n      {{project.description}}\n    </p>\n  </div>\n  <div class=\"footer\">\n    <span class=\"lang-label {{project.language}}\"></span>\n    <span class=\"language\">{{project.language}}</span>\n    <div class=\"more-or-less-block\" (click)=\"selectBlock(project.name)\">\n      <span *ngIf=\"activeProject\" class=\"more-or-less-label\">Less</span>\n      <svg *ngIf=\"activeProject\" class=\"more-or-less-icon\">\n        <path\n          d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n          transform=\"translate(12.000000, 10.000000) rotate(225.000000) translate(-12.000000, -15.000000) \"></path>\n      </svg>\n      <span *ngIf=\"!activeProject\" class=\"more-or-less-label\">More</span>\n      <svg *ngIf=\"!activeProject\" class=\"more-or-less-icon\">\n        <path\n          d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n          transform=\"translate(12.000000, 10.000000) rotate(45.000000) translate(-12.000000, -10.000000) \"></path>\n      </svg>\n    </div>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"project-item\">\n  <div class=\"header\">\n    <a href=\"{{project.githubUrl}}\" class=\"name\">{{project.name}}</a>\n    <span class=\"category\">{{project.category}}</span>\n  </div>\n  <div class=\"description\">\n    <p *ngIf=\"project.description == null || project.description.length == 0\">\n      no description\n    </p>\n    <p *ngIf=\"project.description != null && project.description.length > 0\">\n      {{project.description}}\n    </p>\n  </div>\n  <div class=\"footer\">\n    <span class=\"lang-label {{project.language}}\"></span>\n    <span class=\"language\">{{project.language}}</span>\n    <div class=\"more-or-less-block\" (click)=\"selectBlock(project.name)\">\n      <span *ngIf=\"activeProject\" class=\"more-or-less-label\">Less</span>\n      <svg *ngIf=\"activeProject\" class=\"more-or-less-icon\">\n        <path\n          d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n          transform=\"translate(12.000000, 10.000000) rotate(225.000000) translate(-12.000000, -15.000000) \"></path>\n      </svg>\n      <span *ngIf=\"!activeProject\" class=\"more-or-less-label\">More</span>\n      <svg *ngIf=\"!activeProject\" class=\"more-or-less-icon\">\n        <path\n          d=\"M14,12 L9,12 L9,12 C8.44771525,12 8,12.4477153 8,13 C8,13.5522847 8.44771525,14 9,14 L15,14 C15.2761424,14 15.5261424,13.8880712 15.7071068,13.7071068 C15.8880712,13.5261424 16,13.2761424 16,13 L16,7 C16,6.44771525 15.5522847,6 15,6 C14.4477153,6 14,6.44771525 14,7 L14,7 L14,12 Z\"\n          transform=\"translate(12.000000, 10.000000) rotate(45.000000) translate(-12.000000, -10.000000) \"></path>\n      </svg>\n    </div>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -759,15 +867,15 @@ var ProjectItemComponent = (function () {
     return ProjectItemComponent;
 }());
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", Object)
 ], ProjectItemComponent.prototype, "activeProject", void 0);
 __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
     __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__model_Project__["a" /* Project */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__model_Project__["a" /* Project */]) === "function" && _a || Object)
 ], ProjectItemComponent.prototype, "project", void 0);
 ProjectItemComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-project-item',
         template: __webpack_require__("../../../../../src/app/project-item/project-item.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project-item/project-item.component.css")]
@@ -788,7 +896,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".projects {\n  margin-top: 60px;\n  margin-left: 55px;\n  margin-right: 55px;\n}\n\n.project-count {\n  height: 23px;\n  width: 298px;\n  color: #6B6D6F;\n  font-size: 16px;\n  line-height: 23px;\n  margin-bottom: 25px;\n  display: block;\n}\n\n.hidden {\n  display: none;\n}\n", ""]);
+exports.push([module.i, ".projects {\n  margin-top: 33px;\n  margin-left: 55px;\n  margin-right: 55px;\n}\n\n.project-count {\n  height: 23px;\n  width: 298px;\n  color: #6B6D6F;\n  font-size: 16px;\n  line-height: 23px;\n  margin-bottom: 25px;\n  display: block;\n}\n\n.hidden {\n  display: none;\n}\n", ""]);
 
 // exports
 
@@ -801,7 +909,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/projects/projects.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"projects\">\n  <span class=\"project-count\">\n    <b>{{count | async}}</b> PROJECTS\n  </span>\n  <div class=\"row\">\n    <div *ngFor=\"let project of firstProjects | async;\" class=\"col-md-4\">\n      <epamghio-project-item\n        [activeProject]=\"project.name === activeProjectName\"\n        [project]=\"project\"></epamghio-project-item>\n    </div>\n    <epamghio-project-detail-info [ngClass]=\"{'col-md-12': true, 'hidden': activeProjectName === ''}\">\n    </epamghio-project-detail-info>\n    <div *ngFor=\"let project of secondProjects | async;\" class=\"col-md-4\">\n      <epamghio-project-item [project]=\"project\"></epamghio-project-item>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"projects\">\n  <span class=\"project-count\">\n    <b>{{count}}</b> PROJECTS\n  </span>\n  <div class=\"row\">\n    <div *ngFor=\"let project of firstProjects\" class=\"col-md-4\">\n      <epamghio-project-item\n        [activeProject]=\"project.name === activeProjectName\"\n        [project]=\"project\"></epamghio-project-item>\n    </div>\n    <epamghio-project-detail-info [ngClass]=\"{'col-md-12': true, 'hidden': activeProjectName === ''}\">\n    </epamghio-project-detail-info>\n    <div *ngFor=\"let project of secondProjects\" class=\"col-md-4\">\n      <epamghio-project-item [project]=\"project\"></epamghio-project-item>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -811,15 +919,13 @@ module.exports = "<div class=\"projects\">\n  <span class=\"project-count\">\n  
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__service_project_service__ = __webpack_require__("../../../../../src/app/service/project.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_empty__ = __webpack_require__("../../../../rxjs/add/observable/empty.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_empty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_empty__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_find__ = __webpack_require__("../../../../rxjs/add/operator/find.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_find__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_project_service__ = __webpack_require__("../../../../../src/app/service/project.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_empty__ = __webpack_require__("../../../../rxjs/add/observable/empty.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_empty___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_empty__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_find__ = __webpack_require__("../../../../rxjs/add/operator/find.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_find__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -834,7 +940,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 /**
  * Projects separated on 2 parts - before active project detail info and after.
  */
@@ -842,49 +947,50 @@ var ProjectsComponent = (function () {
     function ProjectsComponent(projectService) {
         this.projectService = projectService;
         this.activeProjectName = '';
-        this.firstProjects = this.projectService.search({ orderByAscUpdatedAt: false });
-        this.secondProjects = __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].empty();
-        this.count = this.firstProjects.flatMap(function (it) { return it; }).count(function (it) { return true; });
+        this.secondProjects = [];
+        this.count = 0;
     }
     ProjectsComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.initAllProjects({ orderByAscUpdatedAt: false });
         this.projectService.search$.subscribe(function (request) {
             _this.activeProjectName = '';
-            _this.firstProjects = _this.projectService.search(request);
-            _this.secondProjects = __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].empty();
-            _this.count = _this.firstProjects.flatMap(function (it) { return it; }).count(function (it) { return true; });
+            _this.initAllProjects(request);
         });
         this.projectService.activeProjectEvent.subscribe(function (projectName) {
             _this.activeProjectName = _this.activeProjectName === projectName ? '' : projectName;
-            var allProjects$ = _this.getAllProjects();
-            _this.divideProjectsOnTwoParts(allProjects$, projectName);
-            _this.getActiveProject(allProjects$, projectName)
-                .subscribe(function (it) { return _this.projectService.projectSelectedEvent.emit(it); });
+            var allProjects = _this.getAllProjects();
+            _this.divideProjectsOnTwoParts(allProjects, _this.activeProjectName);
+            var activeProject = _this.getActiveProject(allProjects, _this.activeProjectName);
+            _this.projectService.projectSelectedEvent.emit(activeProject);
+        });
+    };
+    ProjectsComponent.prototype.initAllProjects = function (request) {
+        var _this = this;
+        this.projectService.search(request)
+            .subscribe(function (projects) {
+            _this.divideProjectsOnTwoParts(projects, _this.activeProjectName);
+            _this.count = _this.getAllProjects().length;
         });
     };
     ProjectsComponent.prototype.getAllProjects = function () {
-        return this.firstProjects
-            .flatMap(function (it) { return it; })
-            .concat(this.secondProjects.flatMap(function (it) { return it; }));
+        return this.firstProjects.concat(this.secondProjects);
     };
-    ProjectsComponent.prototype.getActiveProject = function (allProjects$, projectName) {
-        var _this = this;
+    ProjectsComponent.prototype.getActiveProject = function (allProjects, projectName) {
         if (projectName === '')
             return null;
-        return allProjects$.find(function (it) { return it.name === projectName; })
-            .map(function (it) { return _this.projectService.getProjectDetailInfo(it); });
+        return allProjects.find(function (it) { return it.name === projectName; });
     };
-    ProjectsComponent.prototype.divideProjectsOnTwoParts = function (allProjects$, projectName) {
-        var _this = this;
+    ProjectsComponent.prototype.divideProjectsOnTwoParts = function (allProjects, projectName) {
         if (projectName === '') {
-            this.firstProjects = allProjects$.toArray();
+            this.firstProjects = allProjects;
+            this.secondProjects = [];
         }
         else {
-            allProjects$.findIndex(function (it) { return it.name === projectName; }).subscribe(function (indexOfFoundedItem) {
-                var countOfItemsBeforeSeparation = _this.getCountOfItemsBeforeSeparation(indexOfFoundedItem);
-                _this.firstProjects = allProjects$.take(countOfItemsBeforeSeparation).toArray();
-                _this.secondProjects = allProjects$.skip(countOfItemsBeforeSeparation).toArray();
-            });
+            var indexOfFoundedItem = allProjects.findIndex(function (it) { return it.name === projectName; });
+            var countOfItemsBeforeSeparation = this.getCountOfItemsBeforeSeparation(indexOfFoundedItem);
+            this.firstProjects = allProjects.slice(0, countOfItemsBeforeSeparation);
+            this.secondProjects = allProjects.slice(countOfItemsBeforeSeparation);
         }
     };
     ProjectsComponent.prototype.getCountOfItemsBeforeSeparation = function (foundedElement) {
@@ -893,12 +999,12 @@ var ProjectsComponent = (function () {
     return ProjectsComponent;
 }());
 ProjectsComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-projects',
         template: __webpack_require__("../../../../../src/app/projects/projects.component.html"),
         styles: [__webpack_require__("../../../../../src/app/projects/projects.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__service_project_service__["a" /* ProjectService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__service_project_service__["a" /* ProjectService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__service_project_service__["a" /* ProjectService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__service_project_service__["a" /* ProjectService */]) === "function" && _a || Object])
 ], ProjectsComponent);
 
 var _a;
@@ -960,8 +1066,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SearchProjectComponent = (function () {
     function SearchProjectComponent(projectService) {
         this.projectService = projectService;
-        this.searchInput = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('');
-        this.languageSelect = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('');
+        this.searchInput = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('');
+        this.languageSelect = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('');
         this.languages = [
             { name: 'Any Language', value: '' },
             { name: 'Java', value: 'java' },
@@ -988,7 +1094,7 @@ var SearchProjectComponent = (function () {
     return SearchProjectComponent;
 }());
 SearchProjectComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-search-project',
         template: __webpack_require__("../../../../../src/app/search-project/search-project.component.html"),
         styles: [__webpack_require__("../../../../../src/app/search-project/search-project.component.css")]
@@ -1009,7 +1115,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".search {\n  background-image: url(" + __webpack_require__("../../../../../src/assets/epam-background.png") + ");\n  background-size: cover;\n  padding-top: 85px;\n  padding-bottom: 85px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\n.header-text {\n  width: 1100px;\n  color: #FFFFFF;\n  font-family: Oswald;\n  font-size: 36px;\n  font-weight: 600;\n  line-height: 48px;\n  text-align: center;\n  text-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);\n  margin-bottom: 24px;\n}\n\n.subheader-text {\n  font-weight: 100;\n  width: 670px;\n  color: #FFFFFF;\n  font-size: 14px;\n  line-height: 23px;\n  text-align: center;\n  margin-bottom: 50px;\n}\n\n.intro-text {\n  width: 710px;\n  padding-bottom: 35px;\n  color: #6B6D6F;\n  font-size: 16px;\n  letter-spacing: 1px;\n  line-height: 25px;\n  text-align: center;\n}\n\n.search-block input {\n  padding-left: 40px;\n  margin-right: 5px;\n  width: 586px;\n  line-height: 35px;\n  border: 1px solid #cfd1d2;\n  border-radius: 23px;\n  outline: none;\n}\n\n.search-block button {\n  height: 40px;\n  background-color: #8C8F93;\n  border-radius: 5px;\n  color: #FFFFFF;\n  border: none;\n}\n", ""]);
+exports.push([module.i, ".search {\n  background-image: url(" + __webpack_require__("../../../../../src/assets/epam-background.png") + ");\n  background-size: cover;\n  padding-top: 85px;\n  padding-bottom: 85px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\n.header-text {\n  margin: 0 100px 24px 100px;\n  color: #FFFFFF;\n  font-family: Oswald;\n  font-size: 36px;\n  font-weight: 600;\n  line-height: 48px;\n  text-align: center;\n  text-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);\n}\n\n.subheader-text {\n  font-weight: 100;\n  width: 670px;\n  color: #FFFFFF;\n  font-size: 16px;\n  line-height: 23px;\n  text-align: center;\n  margin-bottom: 50px;\n}\n\n.intro-text {\n  width: 710px;\n  padding-bottom: 35px;\n  color: #6B6D6F;\n  font-size: 16px;\n  letter-spacing: 1px;\n  line-height: 25px;\n  text-align: center;\n}\n\n.search-block input {\n  padding-left: 40px;\n  margin-right: 5px;\n  width: 586px;\n  line-height: 35px;\n  border: 1px solid #cfd1d2;\n  border-radius: 23px;\n  outline: none;\n}\n\n.search-icon {\n  position: relative;\n  top: 17px;\n  left: 47px;\n  display: inline-block;\n  width: 32px;\n  height: 32px;\n  color: blue;\n  background: url(" + __webpack_require__("../../../../../src/assets/search-icon.svg") + ") no-repeat;\n}\n", ""]);
 
 // exports
 
@@ -1022,7 +1128,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/search/search.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"search\">\n  <span class=\"header-text\">\n    EPAM SYSTEMS BELIEVES IN THE PRINCIPLES AND THE POWER\n    OF FREE AND OPEN-SOURCE SOFTWARE PARADIGM.\n  </span>\n  <h3 class=\"subheader-text\">\n    With tens of projects being developed under open-governance principles, EPAM is fully committed to keep adding value\n    across a broad spectrum of technologies and industrial verticals. The projects in this repository are licensed under\n    commonly recognized software licenses like ALv2, MIT, and GPLv3.\n  </h3>\n  <div class=\"search-block\">\n    <input [formControl]=\"searchInput\" placeholder=\"Start searching project ...\"/>\n  </div>\n</div>\n"
+module.exports = "<div class=\"search\">\n  <span class=\"header-text\">\n    EPAM SYSTEMS BELIEVES IN THE PRINCIPLES AND THE POWER\n    OF FREE AND OPEN-SOURCE SOFTWARE PARADIGM.\n  </span>\n  <h3 class=\"subheader-text\">\n    With tens of projects being developed under open-governance principles, EPAM is fully committed to keep adding value\n    across a broad spectrum of technologies and industrial verticals. The projects in this repository are licensed under\n    commonly recognized software licenses like ALv2, MIT, and GPLv3.\n  </h3>\n  <div class=\"search-block\">\n    <span class=\"search-icon\"></span>\n    <input [formControl]=\"searchInput\" placeholder=\"Start searching project ...\"/>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1049,7 +1155,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SearchComponent = (function () {
     function SearchComponent(projectService) {
         this.projectService = projectService;
-        this.searchInput = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('');
+        this.searchInput = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('');
     }
     SearchComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1060,7 +1166,7 @@ var SearchComponent = (function () {
     return SearchComponent;
 }());
 SearchComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'epamghio-search',
         template: __webpack_require__("../../../../../src/app/search/search.component.html"),
         styles: [__webpack_require__("../../../../../src/app/search/search.component.css")]
@@ -1091,7 +1197,7 @@ var CategoryService = (function () {
         this.categories = {
             1: 'BigData & Cloud',
             2: 'Life Science',
-            3: 'Testing & Development',
+            3: 'Test & Dev',
             4: 'Misc'
         };
         this.projectNameToCategories = {
@@ -1135,7 +1241,7 @@ var CategoryService = (function () {
     return CategoryService;
 }());
 CategoryService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
 ], CategoryService);
 
 //# sourceMappingURL=category.service.js.map
@@ -1169,14 +1275,10 @@ CategoryService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_publishReplay__ = __webpack_require__("../../../../rxjs/add/operator/publishReplay.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_publishReplay___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_publishReplay__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_marky_markdown__ = __webpack_require__("../../../../marky-markdown/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_marky_markdown___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_marky_markdown__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__category_service__ = __webpack_require__("../../../../../src/app/service/category.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__model_Language__ = __webpack_require__("../../../../../src/app/model/Language.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_ProjectDetailInfo__ = __webpack_require__("../../../../../src/app/model/ProjectDetailInfo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_moment__ = __webpack_require__("../../../../moment/moment.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__category_service__ = __webpack_require__("../../../../../src/app/service/category.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__model_Language__ = __webpack_require__("../../../../../src/app/model/Language.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_moment__ = __webpack_require__("../../../../moment/moment.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_moment__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1201,54 +1303,50 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-
-var ProjectService = (function () {
-    function ProjectService(http, categoryService, sanitizer) {
+var ProjectService = ProjectService_1 = (function () {
+    function ProjectService(http, categoryService) {
         this.http = http;
         this.categoryService = categoryService;
-        this.sanitizer = sanitizer;
-        this.searchEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this.searchEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.search$ = this.searchEvent.scan(function (acc, curr) { return Object.assign({}, acc, curr); }, {});
-        this.activeProjectEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
-        this.projectSelectedEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this.activeProjectEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.projectSelectedEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
     }
+    ProjectService.shortLanguagesListIfNeeded = function (nameWithNumbers) {
+        return nameWithNumbers.length > 3
+            ? nameWithNumbers.slice(0, 3).concat(new NameWithNumber('Others', nameWithNumbers.slice(3).reduce(function (acc, it) { return acc + it.num; }, 0)))
+            : nameWithNumbers;
+    };
     ProjectService.prototype.search = function (searchObject) {
         var _this = this;
-        this.http.request('https://jsonplaceholder.typicode.com/users')
-            .map(function (resp) { return resp.json(); })
-            .subscribe(function (it) { console.log(it.length); });
-
         var filter = searchObject.filter || '';
         var language = searchObject.language || '';
         var category = searchObject.category || 0;
         var sortOrder = searchObject.orderByAscUpdatedAt;
-        var queryParam = "q=org:epam+" + filter + "+in:name+in:readme";
+        var queryParam = "q=org:epam+" + filter + "+in:name+in:readme+in:description";
         if (language)
             queryParam += "+language=" + language;
-        // const request = new Request({url: '/orgs/epam/repos', params: queryParam});
-        var request = new __WEBPACK_IMPORTED_MODULE_11__angular_http__["d" /* Request */]({ url: 'https://api.github.com/search/repositories', params: queryParam });
+        var request = new __WEBPACK_IMPORTED_MODULE_11__angular_http__["d" /* Request */]({ url: 'https://fakeuser2901:SomeFakePassword@api.github.com/search/repositories', params: queryParam });
         request.method = __WEBPACK_IMPORTED_MODULE_11__angular_http__["e" /* RequestMethod */].Get;
         request.headers = new __WEBPACK_IMPORTED_MODULE_11__angular_http__["a" /* Headers */]({ 'content-type': 'application/json' });
         var compareFn = sortOrder
             ? (function (a, b) { return a.updatedAt.unix() - b.updatedAt.unix(); })
             : (function (a, b) { return b.updatedAt.unix() - a.updatedAt.unix(); });
         return this.http.request(request)
-            .map(function (resp) { return resp.json()['items']; })
-            .flatMap(function (it) { return it; })
+            .map(function (resp) { return resp.json().items; })
+            .mergeMap(function (it) { return it; })
             .map(function (it) {
             return {
                 id: it['id'],
                 name: it['name'],
                 category: _this.categoryService.getCategory(it['name']),
                 language: it['language'],
-                licence: 'Apache-2.0',
                 description: it['description'],
                 githubUrl: it['html_url'],
-                updatedAt: __WEBPACK_IMPORTED_MODULE_17_moment__(it['updated_at']),
+                updatedAt: __WEBPACK_IMPORTED_MODULE_14_moment__(it['updated_at']),
                 forkCount: it['forks_count'],
-                issueCount: it['open_issues_count']
+                issueCount: it['open_issues_count'],
+                org: it['owner'].login
             };
         })
             .filter(function (it) { return _this.categoryService.relatesToCategory(it.name, category); })
@@ -1256,70 +1354,19 @@ var ProjectService = (function () {
             .map(function (it) { return it.sort(compareFn); })
             .publishReplay(1).refCount();
     };
-    ProjectService.prototype._requestMd = function (repoName) {
-        var _this = this;
-        // return this.http.get(`/orgs/EPAM/README.md`)
-        return this.http.get("https://raw.githubusercontent.com/epam/" + repoName + "/master/README.md")
-            .map(function (it) { return it.text(); })
-            .map(function (it) { return _this._processText(it); })
-            .map(function (it) { return _this.sanitizer.bypassSecurityTrustHtml(__WEBPACK_IMPORTED_MODULE_12_marky_markdown___default()(it)); });
-    };
-    ProjectService.prototype._processText = function (text) {
-        var strings = text.split('\n')
-            .map(function (it) { return it.replace(/&nbsp;/g, ''); })
-            .map(function (it) { return it.trim(); })
-            .filter(function (it) {
-            return !it.startsWith('=') &&
-                !it.startsWith('![') &&
-                !it.startsWith('#') &&
-                !it.startsWith('|') &&
-                !it.startsWith('--') &&
-                !it.startsWith('[');
-        });
-        var excludedLines = this._findLinesOfCode(strings);
-        return strings.filter(function (value, index) { return excludedLines.indexOf(index) === -1; }).join('\n');
-    };
-    ProjectService.prototype._findLinesOfCode = function (strings) {
-        var codeLineIndexes = [];
-        strings.forEach(function (str, index) {
-            if (str.startsWith('```'))
-                codeLineIndexes.push(index);
-        });
-        var result = Array();
-        for (var _i = 0; _i < codeLineIndexes.length || ((_i + 1) === codeLineIndexes.length); _i = _i + 2)
-            for (var _j = codeLineIndexes[_i]; _j <= codeLineIndexes[_i + 1]; _j++)
-                result.push(_j);
-        return result;
-    };
-    ProjectService.prototype.getProjectDetailInfo = function (project) {
-        return new __WEBPACK_IMPORTED_MODULE_16__model_ProjectDetailInfo__["a" /* ProjectDetailInfo */](project.id, project.name, project.githubUrl, this._requestMd(project.name), project.updatedAt.format('on MMM DD, YYYY'), this.getLanguages(project.name), '', this.getCommitCount(project.name), this.getContributorCount(project.name), project.forkCount, project.issueCount);
-    };
-    ProjectService.prototype.getCommitCount = function (repoName) {
-        return this.http.get("https://api.github.com/repos/epam/" + repoName + "/commits")
-            .map(function (resp) { return resp.json(); })
-            .flatMap(function (it) { return it; })
-            .count(function (it) { return true; })
-            .map(function (it) { return it; });
-    };
-    ProjectService.prototype.getContributorCount = function (repoName) {
-        return this.http.get("https://api.github.com/repos/epam/" + repoName + "/contributors")
-            .map(function (resp) { return resp.json(); })
-            .flatMap(function (it) { return it; })
-            .count(function (it) { return true; });
-    };
     ProjectService.prototype.getLanguages = function (repoName) {
         var _this = this;
-        // return this.http.get(`/languages`)
         return this.http.get("https://api.github.com/repos/epam/" + repoName + "/languages")
             .map(function (resp) { return resp.json(); })
-            .map(function (it) { return _this.processLanguagesObject(it); });
+            .map(function (it) { return _this.processLanguagesObject(it); })
+            .do(function (it) { return console.log(it); });
     };
     ProjectService.prototype.processLanguagesObject = function (langJson) {
         var nameWithNumbers = Object.keys(langJson)
             .map(function (name) { return new NameWithNumber(name, langJson[name]); });
         var sum = nameWithNumbers
             .reduce(function (result, nameWithNumber) { return result + nameWithNumber.num; }, 0);
-        nameWithNumbers = this.shortLanguagesListIfNeeded(nameWithNumbers);
+        nameWithNumbers = ProjectService_1.shortLanguagesListIfNeeded(nameWithNumbers);
         return this.getPercentOfCodeFromLinesOfCode(nameWithNumbers, sum)
             .filter(function (it) { return it.percent > 0.01; });
     };
@@ -1333,21 +1380,23 @@ var ProjectService = (function () {
                 ? ((Math.trunc(100 - tempSumInPercent) * 100) / 100)
                 : (Math.trunc((it.num * 100 / sum) * 100) / 100);
             tempSumInPercent += percent;
-            languages.push(new __WEBPACK_IMPORTED_MODULE_15__model_Language__["a" /* Language */](it.name, percent));
+            languages.push(new __WEBPACK_IMPORTED_MODULE_13__model_Language__["a" /* Language */](it.name, percent));
             index++;
         });
         return languages;
     };
-    ProjectService.prototype.shortLanguagesListIfNeeded = function (nameWithNumbers) {
-        return nameWithNumbers.length > 3
-            ? nameWithNumbers.slice(0, 3).concat(new NameWithNumber('Others', nameWithNumbers.slice(3).reduce(function (acc, it) { return acc + it.num; }, 0)))
-            : nameWithNumbers;
+    ProjectService.prototype.getContributorCount = function (repoName) {
+        return this.http.get("https://fakeuser2901:SomeFakePassword@api.github.com/repos/epam/" + repoName + "/contributors")
+            .map(function (resp) { return resp.json(); })
+            .flatMap(function (it) { return it; })
+            .count(function (it) { return true; })
+            .map(function (it) { return it.toString(); });
     };
     return ProjectService;
 }());
-ProjectService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_11__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_11__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_14__category_service__["a" /* CategoryService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_14__category_service__["a" /* CategoryService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["c" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_13__angular_platform_browser__["c" /* DomSanitizer */]) === "function" && _c || Object])
+ProjectService = ProjectService_1 = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_11__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_11__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_12__category_service__["a" /* CategoryService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_12__category_service__["a" /* CategoryService */]) === "function" && _b || Object])
 ], ProjectService);
 
 var NameWithNumber = (function () {
@@ -1357,7 +1406,7 @@ var NameWithNumber = (function () {
     }
     return NameWithNumber;
 }());
-var _a, _b, _c;
+var ProjectService_1, _a, _b;
 //# sourceMappingURL=project.service.js.map
 
 /***/ }),
@@ -1373,6 +1422,13 @@ module.exports = __webpack_require__.p + "epam-background.30620d2f1d1091dc0868.p
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "epam-logo.94d8d8ccbb5b1f946e0c.svg";
+
+/***/ }),
+
+/***/ "../../../../../src/assets/search-icon.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "search-icon.fd10e8d0cd70ca79c69f.svg";
 
 /***/ }),
 
@@ -1407,7 +1463,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_21" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
