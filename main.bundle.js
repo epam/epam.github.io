@@ -1307,6 +1307,8 @@ var ProjectService = ProjectService_1 = (function () {
     function ProjectService(http, categoryService) {
         this.http = http;
         this.categoryService = categoryService;
+        this.clientId = 'd2ec9bfd3da341167480';
+        this.clientSecret = '56080d971422042c9c5eaf2a4e3d30e63d927805';
         this.searchEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
         this.search$ = this.searchEvent.scan(function (acc, curr) { return Object.assign({}, acc, curr); }, {});
         this.activeProjectEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
@@ -1323,10 +1325,10 @@ var ProjectService = ProjectService_1 = (function () {
         var language = searchObject.language || '';
         var category = searchObject.category || 0;
         var sortOrder = searchObject.orderByAscUpdatedAt;
-        var queryParam = "q=org:epam+" + filter + "+in:name+in:readme+in:description";
+        var queryParam = "client_id=" + this.clientId + "&client_secret=" + this.clientSecret + "&q=org:epam+" + filter + "+in:name+in:readme+in:description";
         if (language)
             queryParam += "+language:" + language;
-        var request = new __WEBPACK_IMPORTED_MODULE_11__angular_http__["d" /* Request */]({ url: 'https://fakeuser2901:SomeFakePassword@api.github.com/search/repositories', params: queryParam });
+        var request = new __WEBPACK_IMPORTED_MODULE_11__angular_http__["d" /* Request */]({ url: 'https://api.github.com/search/repositories', params: queryParam });
         request.method = __WEBPACK_IMPORTED_MODULE_11__angular_http__["e" /* RequestMethod */].Get;
         request.headers = new __WEBPACK_IMPORTED_MODULE_11__angular_http__["a" /* Headers */]({ 'content-type': 'application/json' });
         var compareFn = sortOrder
@@ -1356,7 +1358,7 @@ var ProjectService = ProjectService_1 = (function () {
     };
     ProjectService.prototype.getLanguages = function (repoName) {
         var _this = this;
-        return this.http.get("https://fakeuser2901:SomeFakePassword@api.github.com/repos/epam/" + repoName + "/languages")
+        return this.http.get("https://api.github.com/repos/epam/" + repoName + "/languages?client_id=" + this.clientId + "&client_secret=" + this.clientSecret)
             .map(function (resp) { return resp.json(); })
             .map(function (it) { return _this.processLanguagesObject(it); });
     };
@@ -1385,7 +1387,7 @@ var ProjectService = ProjectService_1 = (function () {
         return languages;
     };
     ProjectService.prototype.getContributorCount = function (repoName) {
-        return this.http.get("https://fakeuser2901:SomeFakePassword@api.github.com/repos/epam/" + repoName + "/contributors")
+        return this.http.get("https://api.github.com/repos/epam/" + repoName + "/contributors?client_id=" + this.clientId + "&client_secret=" + this.clientSecret)
             .map(function (resp) { return resp.json(); })
             .flatMap(function (it) { return it; })
             .count(function (it) { return true; })
